@@ -15,4 +15,6 @@
     autocrlf = input
     editor = vim
 [gitreview]
-	username = w-miller
+    username = w-miller
+[color]
+	ui = auto
