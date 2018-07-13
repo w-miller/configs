@@ -15,6 +15,12 @@ set number
 " Enable ruler
 set ruler
 set rtp+=/Users/Will/.opam/system/share/ocp-index/vim
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+      silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 call plug#begin()
 Plug 'rgrinberg/vim-ocaml'
 Plug 'godlygeek/tabular'
