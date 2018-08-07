@@ -4,7 +4,7 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # OPAM configuration
 . /Users/Will/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
-export PS1="[\e[0;34m\]\u\[\e[m\] \w\[$(tput sgr0)\] \[\e[0;31m\]\t\[\e[m\]]\n$ "
+export PS1="[\e[0;34m\]\u\[\e[m\]@\e[0;90m\]\h\[\e[m\] \w\[$(tput sgr0)\] \[\e[0;31m\]\t\[\e[m\]]\n$ "
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
