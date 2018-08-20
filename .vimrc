@@ -27,16 +27,10 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
-Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; ./generate.py' }
 call plug#end()
 " let g:vim_markdown_folding_disabled = 1
 "
 map <F2> :w<CR> :!ocamlc % && ocaml %<CR>
-
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
 
 set backspace=2
 
