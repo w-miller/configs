@@ -44,3 +44,13 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" Vim 7.3 persistent undo
+if has('persistent_undo')
+    let myundodir = '$HOME/.vim/undodir/'
+    silent call system('mkdir -p ' . myundodir)
+    let &undodir = expand(myundodir)          " where to save undo histories
+    set undofile                   " Save undos after file closes
+    set undolevels=1000            " How many undos
+    set undoreload=10000           " number of lines to save for undo
+endif
