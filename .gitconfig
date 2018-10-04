@@ -1,8 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 	name = Will Miller
-	email = willm@stackhpc.com
+	email = willmiller97@gmail.com
 [push]
 	default = simple
 [alias]
