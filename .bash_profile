@@ -30,3 +30,5 @@ function retry() {
     $@ && break
   done
 }
+
+alias here='open -a Finder .'
