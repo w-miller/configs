@@ -1,18 +1,12 @@
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
-# OPAM configuration
-. /Users/Will/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
 export PS1="[\e[0;34m\]\u\[\e[m\]@\e[0;90m\]\h\[\e[m\] \w\[$(tput sgr0)\] \[\e[0;31m\]\t\[\e[m\]]\n$ "
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
-
-alias ':q'=logout
-export PATH=$PATH:~/.nexustools
 
 # Clipboard aliases
 alias c='pbcopy'
@@ -32,3 +26,5 @@ function retry() {
 }
 
 alias here='open -a Finder .'
+
+alias vim='nvim'
