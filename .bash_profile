@@ -26,5 +26,3 @@ function retry() {
 }
 
 alias here='open -a Finder .'
-
-alias vim='nvim'
