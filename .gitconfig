@@ -1,7 +1,7 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Will Miller
-	email = will.miller@pexip.com
+	email = will.miller@pexip.com 
 [push]
 	default = simple
 [alias]
@@ -17,3 +17,7 @@
     username = w-miller
 [color]
 	ui = auto
+[pull]
+	rebase = true
+[submodule]
+	recurse = true
