@@ -26,3 +26,5 @@ function retry() {
 }
 
 alias here='open -a Finder .'
+
+source ~/configs/git-completion.bash
